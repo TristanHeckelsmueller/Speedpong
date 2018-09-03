@@ -1,0 +1,66 @@
+.hamburger {
+  padding: 0.5em;
+  cursor: pointer;
+  max-width: 75px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  @mixin atSmall {
+    padding: 1em;
+  }
+  @mixin atLarge {
+    padding: 0.8em 1em;
+    max-width: 100px;
+  }
+  @mixin atLargest {
+    padding: 0.8em 1em;
+    max-width: 120px;
+  }
+  &::before {
+    transition: 1s all ease;
+    content: "";
+    display: block;
+    position: relative;
+    width: 150%;
+    height: 2px;
+    background: #fff;
+  }
+  &__center {
+    transition: 1s all ease;
+    transition: 1s all ease;
+    position: relative;
+    left: 0;
+    margin: 4px 0;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    @mixin atLarge {
+      margin: 7px 0;
+    }
+    &--dark {
+      transition: 1s all ease;
+      background: #fff !important;
+    }
+    &--dark_pseudo {
+      &::before {
+        transition: 1s all ease;
+        background: #fff !important;
+      }
+      &::after {
+        transition: 1s all ease;
+        background: #fff !important;
+      }
+    }
+  }
+  &::after {
+    transition: 1s all ease;
+    content: "";
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 2px;
+    background: #fff;
+  }
+}

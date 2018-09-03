@@ -1,0 +1,27 @@
+.gallerie {
+  display: grid;
+
+  grid-template-columns: auto;
+  @mixin atSmall {
+    grid-template-columns: auto auto;
+  }
+  @mixin atLargest {
+    grid-template-columns: auto auto auto;
+  }
+  &__img {
+    padding: 1em;
+    &--big {
+      position: absolute;
+      width: 90vh;
+      height: 90vh;
+      top: 0;
+      right: 0;
+      transition: 1s all ease;
+    }
+  }
+  & img {
+    cursor: pointer;
+    transition: 1s all ease;
+    width: 100%;
+  }
+}

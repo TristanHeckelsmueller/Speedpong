@@ -1,0 +1,44 @@
+.contact {
+  width: 100%;
+  /* padding: 2em; */
+  margin: 0 auto;
+  @mixin atMedium {
+    width: 50%;
+  }
+  @mixin atLarge {
+    width: 50%;
+    /* margin-left: 5em; */
+    /* padding: 3em; */
+  }
+  &__form {
+    & div {
+      margin: 1em 0 1em 0;
+    }
+    &__inputs {
+      padding: 0.3em 0.2em;
+      margin-top: 0.2em;
+      border-radius: 0.1em;
+      border: 1px solid #a5a5a5;
+      width: 100%;
+    }
+  }
+  & button {
+  }
+  & label {
+    font-weight: 900;
+  }
+}
+
+#submit {
+  padding: 0.5em;
+  background: #2f2f2f;
+  margin-bottom: 1em;
+  border: 0;
+  color: #fff;
+  box-shadow: 2px 2px 5px #000;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  border-radius: 0.2em;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}

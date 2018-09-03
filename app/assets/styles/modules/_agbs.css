@@ -1,0 +1,13 @@
+.agbs {
+  color: #fff;
+  background: #2b3388;
+  padding: 10vh 1em;
+
+  &__wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  & h1 {
+    font-size: 1.5em;
+  }
+}

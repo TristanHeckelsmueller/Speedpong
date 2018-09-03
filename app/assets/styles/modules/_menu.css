@@ -1,0 +1,44 @@
+.menu {
+  position: absolute;
+  height: 100vh;
+
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+
+  display: flex;
+  align-items: baseline;
+  transition: 0.5s all ease;
+  &__list {
+    margin: 20% 0;
+    & h2 {
+      margin-bottom: 0.1em;
+    }
+  }
+  & ul {
+    margin: 2em 0;
+    padding: 0;
+    list-style-type: none;
+    & li {
+      padding: 1em;
+      & a {
+        font-size: 1em;
+        font-weight: 100;
+        color: transparent;
+        text-decoration: none;
+      }
+    }
+  }
+  &--visible {
+    visibility: visible !important;
+    background: #1d1d1df1;
+    @mixin atLargest {
+      width: 22% !important;
+    }
+    & a {
+      color: #fff !important;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.modal {
+  position: absolute;
+  display: block;
+  width: 90vw;
+  height: auto;
+  max-height: 90vh;
+  margin: 5vh 5vw;
+  background: linear-gradient(117.52deg, #d80827 0%, #2b3388 100%);
+  color: transparent;
+  padding: 2.5em 1.5em;
+  transition: 1s all ease;
+  overflow-y: scroll;
+  box-shadow: 0px 6px 8px 3px #252525;
+  @mixin atSmall {
+    display: flex;
+  }
+
+  &__left {
+    padding: 0 1em 0 0;
+    height: auto;
+
+    @mixin atSmall {
+      width: 50%;
+    }
+    & h2 {
+      margin-top: 0;
+    }
+  }
+  &__right {
+    padding: 0 1em 0 0;
+    height: auto;
+    @mixin atSmall {
+      width: 50%;
+    }
+  }
+  & img {
+    width: 100%;
+  }
+}
+#about {
+  transform: translateX(-100vw);
+}
+#anleitung {
+  transform: translateX(-100vw);
+  @mixin atLarge {
+    width: 60vw;
+    height: 70vh;
+    margin: 15vh 20vw;
+  }
+}
+#gallerie {
+  transform: translateY(-100vh);
+}
+#kontakt {
+  transform: translateY(-100vh);
+}
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0.2em;
+  right: 0.4em;
+  font-size: 2em;
+  transition: 0.5s all ease;
+  &:hover {
+    transition: 0.5s all ease;
+    color: #d80827;
+  }
+}
+.modal--show {
+  transform: translateX(0) translateY(0) !important;
+
+  background: linear-gradient(117.52deg, #d80827 0%, #2b3388 100%);
+  border-radius: 5px;
+  color: #fff;
+  transition: 1s all ease;
+  width: 90vw;
+  height: auto;
+  max-height: 90vh;
+}
+
+.anleitung {
+  position: absolute;
+  display: none;
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh 5vw;
+  background: transparent;
+  color: transparent;
+  transition: 1s all ease;
+  padding: 1em;
+  & img {
+    width: 50%;
+  }
+}
+.ui-widget-content {
+  color: #fff !important;
+  padding: 1em 0 !important;
+}
+
+#tabs {
+  border-radius: 5px;
+  background: none;
+  border: none;
+  & ul {
+    background: none;
+    border: none;
+  }
+}
+.ui-tabs-active {
+  background: #2b3388;
+}

@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+html {
+  font-size: 16px;
+  @mixin atSmall {
+    font-size: 18px;
+  }
+  @mixin atLarge {
+    font-size: 20px;
+  }
+  @mixin atLargest {
+    font-size: 22px;
+  }
+}
+
+img {
+  border-radius: 5px;
+}

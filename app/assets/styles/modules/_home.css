@@ -1,0 +1,9 @@
+.home {
+  position: fixed;
+  width: 5vw;
+  top: 1em;
+  right: 1em;
+  & img {
+    width: 100%;
+  }
+}

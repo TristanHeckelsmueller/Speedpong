@@ -1,0 +1,60 @@
+.main {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("../../../assets/images/background/background_img_blurred_v2.jpg");
+  background-size: cover;
+  overflow-y: scroll;
+  @mixin atSmall {
+    display: flex;
+  }
+  &__img {
+    & img {
+      width: 100%;
+
+      transition: 2s all ease;
+      &:hover {
+      }
+    }
+    &--desktop {
+      display: none;
+      @mixin atSmall {
+        display: block;
+      }
+    }
+    &--mobile {
+      display: block;
+      width: 50%;
+      margin: 4em auto;
+      @mixin atSmall {
+        display: none;
+      }
+    }
+  }
+  &__links {
+    margin: 0 10%;
+    &__link {
+      background: #d80827;
+      text-align: center;
+      border-radius: 7px;
+      transition: 0.2s all ease;
+      padding: 1em;
+      color: #fff;
+      cursor: pointer;
+      margin: 1em;
+      @mixin atSmall {
+        padding: 0.5em;
+        margin: 10vh 0;
+      }
+      & a {
+        color: #fff;
+        text-decoration: none;
+      }
+      &:hover {
+        transition: 0.2s all ease;
+        box-shadow: 3px 3px 5px #000;
+      }
+    }
+  }
+}
