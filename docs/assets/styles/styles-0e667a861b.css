@@ -224,7 +224,7 @@ a {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: url(https://raw.githubusercontent.com/TristanHeckelsmueller/Speedpong/master/app/assets/images/background/background_img_blurred_v2.jpg");
+  background: url("https://raw.githubusercontent.com/TristanHeckelsmueller/Speedpong/master/app/assets/images/background/background_img_blurred_v2.jpg");
   background-size: cover;
   overflow-y: scroll;
 }
