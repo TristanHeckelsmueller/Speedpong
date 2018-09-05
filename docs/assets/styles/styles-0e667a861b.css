@@ -234,6 +234,9 @@ a {
     display: flex;
   }
 }
+video {
+  width: 100%;
+}
 .main__img img {
   width: 100%;
   transition: all 2s ease;
