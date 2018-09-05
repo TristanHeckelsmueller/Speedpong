@@ -3,7 +3,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background: url("https://github.com/TristanHeckelsmueller/Speedpong/blob/master/docs/assets/images/background/background_img_blurred_v2.jpg");
+  background: url("/assets/images/background/background_img_blurred_v2.jpg");
   background-size: cover;
   overflow-y: scroll;
   @mixin atSmall {
@@ -55,6 +55,23 @@
         transition: 0.2s all ease;
         box-shadow: 3px 3px 5px #000;
       }
+    }
+  }
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  top: 0.5em;
+  left: 0.5em;
+  & img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1em;
+    @mixin atMedium {
+      width: 50px;
+      height: 50px;
+      margin-right: 0.5em;
     }
   }
 }

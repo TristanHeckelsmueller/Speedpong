@@ -1,6 +1,6 @@
 import Menu from "./modules/Menu.js";
 import Modal from "./modules/Modal.js";
-import Gallery from "./modules/Gallery.js";
+
 import Manual from "./modules/Manual.js";
 
 let manual = new Manual();

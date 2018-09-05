@@ -18,3 +18,13 @@ html {
 img {
   border-radius: 5px;
 }
+
+li {
+  margin-bottom: 0.3em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}

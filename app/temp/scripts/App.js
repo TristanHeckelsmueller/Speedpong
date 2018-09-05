@@ -10338,11 +10338,7 @@ var _Modal = __webpack_require__(3);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Gallery = __webpack_require__(4);
-
-var _Gallery2 = _interopRequireDefault(_Gallery);
-
-var _Manual = __webpack_require__(5);
+var _Manual = __webpack_require__(4);
 
 var _Manual2 = _interopRequireDefault(_Manual);
 
@@ -10351,7 +10347,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var manual = new _Manual2.default();
 var menu = new _Menu2.default();
 var modal = new _Modal2.default();
-var gallery = new _Gallery2.default();
+var gallery = new Gallery();
 console.log("Start");
 
 /***/ }),
@@ -10419,11 +10415,13 @@ var Modal = function () {
     var modal_anl_link = (0, _jquery2.default)("#anleitung_link");
     var modal_gal_link = (0, _jquery2.default)("#gallerie_link");
     var modal_contact_link = (0, _jquery2.default)("#kontakt_link");
+    var modal_buy_link = (0, _jquery2.default)("#kaufen_link");
 
     var modal_sp = (0, _jquery2.default)("#about");
     var modal_anl = (0, _jquery2.default)("#anleitung");
     var modal_gal = (0, _jquery2.default)("#gallerie");
     var modal_contact = (0, _jquery2.default)("#kontakt");
+    var modal_buy = (0, _jquery2.default)("#kaufen");
     var close = (0, _jquery2.default)(".close");
     modal_sp_link.click(function () {
       modal_sp.addClass("modal--show");
@@ -10437,11 +10435,15 @@ var Modal = function () {
     modal_contact_link.click(function () {
       modal_contact.addClass("modal--show");
     });
+    modal_buy_link.click(function () {
+      modal_buy.addClass("modal--show");
+    });
     close.click(function () {
       modal_sp.removeClass("modal--show");
       modal_anl.removeClass("modal--show");
       modal_gal.removeClass("modal--show");
       modal_contact.removeClass("modal--show");
+      modal_buy.removeClass("modal--show");
     });
   }
 
@@ -10470,54 +10472,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Gallery = function Gallery() {
-  _classCallCheck(this, Gallery);
-
-  var img_01 = (0, _jquery2.default)("#img-01");
-  var img_02 = (0, _jquery2.default)("#img-02");
-  var img_03 = (0, _jquery2.default)("#img-03");
-  var img_04 = (0, _jquery2.default)("#img-04");
-  var img_05 = (0, _jquery2.default)("#img-05");
-
-  img_01.click(function () {
-    img_01.toggleClass("gallerie__img--big");
-  });
-  img_02.click(function () {
-    img_02.toggleClass("gallerie__img--big");
-  });
-  img_03.click(function () {
-    img_03.toggleClass("gallerie__img--big");
-  });
-  img_04.click(function () {
-    img_04.toggleClass("gallerie__img--big");
-  });
-  img_05.click(function () {
-    img_05.toggleClass("gallerie__img--big");
-  });
-};
-
-exports.default = Gallery;
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-var _jqueryUi = __webpack_require__(6);
+var _jqueryUi = __webpack_require__(5);
 
 var _jqueryUi2 = _interopRequireDefault(_jqueryUi);
 
@@ -10532,7 +10487,7 @@ var Manual = function Manual() {
 exports.default = Manual;
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10554,7 +10509,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 	if ( true ) {
 
 		// AMD. Register as an anonymous module.
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(0), __webpack_require__(7) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [ __webpack_require__(0), __webpack_require__(6) ], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -11274,7 +11229,7 @@ return $.widget;
 
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;( function( factory ) {
