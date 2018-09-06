@@ -52,9 +52,7 @@
 #anleitung {
   transform: translateX(-100vw);
   @mixin atLarge {
-    width: 60vw;
-    height: 70vh;
-    margin: 15vh 20vw;
+    min-height: 90vh;
   }
 }
 #gallerie {

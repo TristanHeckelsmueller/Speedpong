@@ -6,5 +6,5 @@ import Manual from "./modules/Manual.js";
 let manual = new Manual();
 let menu = new Menu();
 let modal = new Modal();
-let gallery = new Gallery();
+
 console.log("Start");

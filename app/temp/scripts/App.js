@@ -10347,7 +10347,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var manual = new _Manual2.default();
 var menu = new _Menu2.default();
 var modal = new _Modal2.default();
-var gallery = new Gallery();
+
 console.log("Start");
 
 /***/ }),

@@ -234,9 +234,6 @@ a {
     display: flex;
   }
 }
-video {
-  width: 100%;
-}
 .main__img img {
   width: 100%;
   transition: all 2s ease;
@@ -292,6 +289,8 @@ video {
   display: flex;
   top: 0.5em;
   left: 0.5em;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .icons img {
   width: 40px;
@@ -475,9 +474,7 @@ video {
 }
 @media (min-width: 1010px) {
   #anleitung {
-    width: 60vw;
-    height: 70vh;
-    margin: 15vh 20vw;
+    min-height: 90vh;
   }
 }
 #gallerie {
