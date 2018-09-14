@@ -639,6 +639,10 @@ a {
     font-size: 0.6em;
   }
 
+video {
+  z-index: 1;
+}
+
 .hamburger {
   padding: 0.5em;
   cursor: pointer;
@@ -809,6 +813,7 @@ a {
   overflow-y: scroll;
   -webkit-box-shadow: 0px 6px 8px 3px #252525;
           box-shadow: 0px 6px 8px 3px #252525;
+  z-index: 2;
 }
 
 @media (min-width: 530px) {

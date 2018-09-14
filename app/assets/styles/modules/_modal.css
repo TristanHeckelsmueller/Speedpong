@@ -11,6 +11,7 @@
   transition: 1s all ease;
   overflow-y: scroll;
   box-shadow: 0px 6px 8px 3px #252525;
+  z-index: 2;
   @mixin atSmall {
     display: flex;
   }
