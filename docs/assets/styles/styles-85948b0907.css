@@ -475,13 +475,13 @@ a {
 }
 @media (min-width: 1010px) {
   .modal__right--img {
-    width: 40%;
-    margin-left: 10%;
+    width: 48%;
+    margin-left: 5%;
   }
 }
 @media (min-width: 1510px) {
   .modal__right--img {
-    width: 30%;
+    width: 32%;
   }
 }
 .modal img {

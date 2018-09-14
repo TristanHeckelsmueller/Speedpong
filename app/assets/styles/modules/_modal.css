@@ -35,8 +35,8 @@
     }
     &--img {
       @mixin atLarge {
-        width: 40%;
-        margin-left: 10%;
+        width: 48%;
+        margin-left: 5%;
       }
       @mixin atLargest {
         width: 30%;
