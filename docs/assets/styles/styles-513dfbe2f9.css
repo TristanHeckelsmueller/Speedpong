@@ -245,7 +245,7 @@ a {
 @media (min-width: 530px) {
   .main__img--desktop {
     display: -ms-flexbox;
-    display: flex;
+    display: block;
     -ms-flex-pack: center;
     justify-content: center;
   }
