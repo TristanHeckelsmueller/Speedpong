@@ -44,7 +44,7 @@ gulp.task("optimizeImages", ["deleteDistFolder"], function() {
         multipass: true
       })
     )
-    .pipe(gulp.dest("./dist/assets/images"));
+    .pipe(gulp.dest("./docs/assets/images"));
 });
 
 gulp.task("useminTrigger", ["deleteDistFolder"], function() {
@@ -54,9 +54,8 @@ gulp.task("useminTrigger", ["deleteDistFolder"], function() {
 gulp.task("usemin", ["styles", "scripts"], function() {
   let pathsToHTML = [
     "./app/index.html",
-    "./app/contact.html",
-    "./app/impressum.html",
-    "./app/products.html"
+    "./app/agbs.html",
+    "./app/impressum.html"
   ];
   return gulp
     .src(pathsToHTML)

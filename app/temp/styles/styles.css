@@ -629,8 +629,8 @@ a {
   }
 
 .main_agb {
-  bottom: 0;
-  right: 0;
+  bottom: 0.5em;
+  right: 0.5em;
   color: #fff;
   padding: 0.5em 0.5em;
 }
