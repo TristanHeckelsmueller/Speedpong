@@ -22,8 +22,10 @@
     &--desktop {
       display: none;
       @mixin atSmall {
-        display: flex;
-        justify-content: center;
+        display: grid;
+      }
+      & img {
+        margin: 0 12.5%;
       }
     }
     &--mobile {

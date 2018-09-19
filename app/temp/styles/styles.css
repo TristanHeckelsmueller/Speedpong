@@ -543,14 +543,13 @@ a {
 @media (min-width: 530px) {
 
 .main__img--desktop {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center
+        display: grid
     }
   }
+
+.main__img--desktop img {
+        margin: 0 12.5%;
+      }
 
 .main__img--mobile {
       display: block;
