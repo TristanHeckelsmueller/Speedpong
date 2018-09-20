@@ -30,15 +30,21 @@
     }
     &--mobile {
       display: block;
-      width: 50%;
-      margin: 4em auto;
+      width: 20%;
+      position: absolute;
+      top: 0.5em;
+      right: 0.5em;
       @mixin atSmall {
         display: none;
       }
     }
   }
   &__links {
-    margin: 0 10%;
+    margin: 75% 10% 0 10%;
+    @mixin atSmall {
+      margin: 0 10%;
+    }
+
     &__link {
       background: #d80827;
       text-align: center;
@@ -61,6 +67,9 @@
         box-shadow: 3px 3px 5px #000;
       }
     }
+  }
+  &__right {
+    margin: 0 10% !important;
   }
 }
 
@@ -86,8 +95,8 @@
   right: 0.5em;
   color: #fff;
   padding: 0.5em 0.5em;
+  position: absolute;
   @mixin atMedium {
-    position: absolute;
   }
   & a {
     font-weight: 100;
@@ -96,5 +105,17 @@
 }
 video {
   z-index: 1;
+}
+.main__video {
+  width: 70% !important;
+  margin: 20% 15%;
   border: 3px solid #fff;
+  top: none !important;
+  right: unset !important;
+  @mixin atSmall {
+    top: 0.5em !important;
+    right: 0.5em !important;
+    width: 23% !important;
+    margin: 0;
+  }
 }

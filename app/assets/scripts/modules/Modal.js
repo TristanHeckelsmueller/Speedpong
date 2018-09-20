@@ -2,6 +2,7 @@ import $ from "jquery";
 
 class Modal {
   constructor() {
+    console.log("Modal");
     let modal_sp_link = $("#speedpong_link");
     let modal_anl_link = $("#anleitung_link");
     let modal_gal_link = $("#gallerie_link");
