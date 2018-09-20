@@ -526,7 +526,7 @@ a {
   }
 
 .main__img img {
-      width: 75%;
+      width: 58%;
 
       -webkit-transition: 2s all ease;
 
@@ -548,7 +548,7 @@ a {
   }
 
 .main__img--desktop img {
-        margin: 0 12.5%;
+        margin: 0 20.5%;
       }
 
 .main__img--mobile {

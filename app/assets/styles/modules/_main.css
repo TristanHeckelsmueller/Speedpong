@@ -13,7 +13,7 @@
     @mixin atMedium {
     }
     & img {
-      width: 75%;
+      width: 58%;
 
       transition: 2s all ease;
       &:hover {
@@ -25,7 +25,7 @@
         display: grid;
       }
       & img {
-        margin: 0 12.5%;
+        margin: 0 20.5%;
       }
     }
     &--mobile {
